@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toktik/domain/video_post.dart';
+import 'package:toktik/domain/entities/video_post.dart';
 import 'package:toktik/infraestucture/models/local_video_model.dart';
 import 'package:toktik/shared/data/local_video_post.dart';
 
@@ -11,7 +11,7 @@ class DiscoverProvider extends ChangeNotifier {
 
   Future<void> loadNextPage() async {
     //metodo espera 2 seg
-    await Future.delayed(const Duration(seconds: 2));
+    // await Future.delayed(const Duration(seconds: 2));
     //Carga los videos
     final List<VideoPost> newVideos = videoPosts
         .map((video) => LocalVideoModel.fromJson(video).toVideoPostEntity())

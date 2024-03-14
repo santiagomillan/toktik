@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:toktik/domain/video_post.dart';
+import 'package:toktik/domain/entities/video_post.dart';
 import 'package:toktik/presentation/widgets/shared/video_buttons.dart';
 import 'package:toktik/presentation/widgets/video/fullscreen_player.dart';
 
